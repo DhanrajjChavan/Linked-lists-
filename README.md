@@ -3,7 +3,7 @@
 
 This repository contains an implementation of a **Singly Linked List** in C++. A linked list is a linear data structure in which elements, called nodes, are stored in a non-contiguous manner. Each node contains two components:
 - **Data**: The value stored in the node.
-- **Next Pointer**: A reference to the next node in the sequence.
+- **Next Pointer**: A reference to the next node in the sequence. 
 
 Unlike arrays, linked lists allow for dynamic memory allocation, making them more efficient for insertions and deletions.
 
