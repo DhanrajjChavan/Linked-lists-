@@ -12,10 +12,11 @@ public:
     }
 };
 
-void insertHead(Node*& head, int newData) { // Pass head by reference
+void insertHead(Node*& head, int newData) 
+{ 
     Node* newNode = new Node(newData);
     newNode->next = head;
-    head = newNode; // Update the head to point to the new node
+    head = newNode; 
 }
 
 void Disp(Node* head) {
@@ -24,15 +25,15 @@ void Disp(Node* head) {
         cout << temp->data << "->";
         temp = temp->next;
     }
-    cout << "NULL" << endl; // Indicate end of the list
-}
+    cout << "NULL" << endl; 
+
 
 int main() {
-    Node* head = NULL; // Initialize head to NULL
+    Node* head = NULL; 
     insertHead(head, 10);
-    insertHead(head, 20); // Insert more nodes for testing
+    insertHead(head, 20); 
     insertHead(head, 30);
-    Disp(head); // Display the list
+    Disp(head);
     return 0;
 }
 
